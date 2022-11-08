@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>National Lightning Strike Dataset</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" href="images/thought.ico">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Lucy</strong> <span>by National Forests</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="wrnf.html">Forest Health</a></li>
+							<li><a href="lightning.html">Lightning</a></li>
+							<li><a href="method.html">Bike Trails</a></li>
+							<li><a href="sand.html">Sand Dunes</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Are cloud-to-ground lightning strikes clustered?</h1>
+									</header>
+									<span class="image main"><img src="images/NLDN_Data_USA.jpg" alt="" /></span>
+									<p>Data from: National Lightning Detection Network</p>
+									<h1>Yes.</h1>
+									<p>Data Analysis:
+										Points are all the same distance from each other as the data is reported as the amount of
+										lightning strikes within the latitude-longitude coordinates for a 10km square. Each point has a
+										value that is the total count of cloud to ground lightning strikes. Cliped data to USA boundaries
+										because lightning in the ocean is not a fire risk. The csv had over 500,000 rows of data</p>
+									<p>Results show that the incidence of lightning strikes is clustered. The eastern side of the USA has
+										higher incidence of cloud-to-ground lightning strikes. The data did not have any zero values, so
+										the Hot Spot Analysis did not show many cold spots, there was just missing data on the west
+										coast. To correct this, I will add rows to the dataset to include the zero values so the calculations
+										can predict the cold spots. I was surprised that the southern rocky mountain region didn’t have
+										more lightning strikes.</p>
+									<span class="image main"><img src="images/NLDN_HotSpt.jpg" alt="" /></span>
+									<p>Focusing on Colorado</p>
+									<p>Using this information, you could compare the hot spot lightning strike data to low values of NDVI and predict where a lightning caused wildfire would be likely to occur.</p>
+
+									<span class="image main"><img src="images/NLDN_CO_totalcount.jpg" alt="" /></span>
+									<span class="image main"><img src="images/NLDN_CO_hotspots.jpg" alt="" /></span>
+									<h2>Data Sources:</h2>
+									<ul class="links">
+										<li>Lightning strike tiles:<a href="https://www.ncei.noaa.gov/products/lightning-products"> NOAA Data</a></li>
+										<li>State Outlines:<a href="https://www.arcgis.com/home/item.html?id=540003aa59b047d7a1f465f7b1df1950"> esri ArcGIS dataset</a></li>
+										<li>Major Cities:<a href="https://hub.arcgis.com/datasets/esri::usa-major-cities/explore?location=33.964857%2C-113.479736%2C4.00"> esri ArcGIS dataset</a></li>
+									</ul>	
+									
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/lucykepner" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/lucy-kepner/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Kepner Design Studio</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
